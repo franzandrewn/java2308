@@ -13,7 +13,11 @@ numType строчного типа
 public class HW2 {
 
   public static void main(String[] args) {
+    PhoneNumber pn = new PhoneNumber();
+    pn.numType = "Мобильный";
+    pn.num = 89991231212L;
 
+    System.out.println(pn.numType + " " + pn.num);
   }
 
 }

@@ -32,7 +32,7 @@ public class Parrot extends Animal {
   }
 
   @Override // аннотация - метка для компилятора
-  void print() {
+  public void print() {
     System.out.println("Попугай " + name + " возрастом" + age + " размах крыльев " + wingsLength);
   }
 }

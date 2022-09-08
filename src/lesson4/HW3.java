@@ -11,4 +11,14 @@ package lesson4;
  */
 public class HW3 {
 
+  public static void main(String[] args) {
+    PhoneNumber pn1 = new PhoneNumber();
+    pn1.numType = "Мобильный";
+    pn1.num = 89991231212L;
+
+    PhoneNumber pn2 = new PhoneNumber("Домашний", 89991234567L);
+
+    System.out.println(pn1.numType + " " + pn1.num);
+    System.out.println(pn2.numType + " " + pn2.num);
+  }
 }

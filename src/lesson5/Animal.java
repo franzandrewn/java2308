@@ -1,8 +1,8 @@
 package lesson5;
 
 public class Animal {
-  String name;
-  int age;
+  public String name;
+  public int age;
 
   public Animal() {
     name = "";
@@ -13,11 +13,11 @@ public class Animal {
     this.age = age;
   }
 
-  void print() {
+  public void print() {
     System.out.println("Животное " + name + " возрастом " + age);
   }
 
-  void birthday() {
+  public void birthday() {
     age++;
   }
 }

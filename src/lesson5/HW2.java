@@ -13,6 +13,33 @@ package lesson5;
 public class HW2 {
 
   public static void main(String[] args) {
+    Tree tree = new Tree(3, 0.5);
+    Bush bush = new Bush(1, 1.5);
+    // До роста
+    System.out.println("Tree " + tree.height + " " + tree.width);
+    System.out.println("Bush " + bush.height + " " + bush.width);
 
+    tree.grow();
+    bush.grow();
+    // После первого роста
+    System.out.println("Tree " + tree.height + " " + tree.width);
+    System.out.println("Bush " + bush.height + " " + bush.width);
+
+    // *
+    Plant[] plants = new Plant[]{tree, bush};
+
+    for (int i = 0; i < plants.length; i++) {
+      plants[i].grow();
+    }
+    // После 2 роста через цикл for
+    System.out.println("Tree " + tree.height + " " + tree.width);
+    System.out.println("Bush " + bush.height + " " + bush.width);
+
+    for (Plant p : plants) {
+      p.grow();
+    }
+    // После 3 роста через цикл for..each
+    System.out.println("Tree " + tree.height + " " + tree.width);
+    System.out.println("Bush " + bush.height + " " + bush.width);
   }
 }
