@@ -1,7 +1,7 @@
 package lesson6;
 
-import com.google.gson.Gson;
-import com.google.gson.internal.bind.util.ISO8601Utils;
+//import com.google.gson.Gson;
+//import com.google.gson.internal.bind.util.ISO8601Utils;
 
 import java.io.*;
 import java.util.Arrays;
@@ -85,8 +85,10 @@ public class Main {
   }
 
   static void packages() {
-    Gson gson = new Gson();
-    System.out.println(gson);
+    // Для работы следующего кода необходимо, чтобы была определена библиотека gson
+    // Это могут быть или локальная папка с файлами .java или архив .jar
+//    Gson gson = new Gson();
+//    System.out.println(gson);
   }
 
   static void exceptions() throws FileNotFoundException {
