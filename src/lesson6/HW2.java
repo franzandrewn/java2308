@@ -18,6 +18,11 @@ package lesson6;
 public class HW2 {
 
   public static void main(String[] args) {
+    Plane p = new Plane("Boeing", "747", 300);
+    p.print();
+    System.out.println(p.travel(10));
 
+    Plane p2 = new Plane();
+    p2.print();
   }
 }
