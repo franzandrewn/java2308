@@ -10,6 +10,11 @@ public class Singleton {
 
   public static Singleton getInstance(String value) {
     if (instance == null) {
+      try {
+        Thread.sleep(10);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
       instance = new Singleton(value);
     }
     return instance;
